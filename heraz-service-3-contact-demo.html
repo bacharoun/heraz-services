@@ -528,7 +528,7 @@ html{scroll-padding-top:95px}
 .hg-study-continuation>p{max-width:760px}
 .hg-study-continuation .hg-closing{border-left:3px solid #f95343;padding:3px 0 3px 24px;margin:27px 0 0;max-width:760px}
 .hg-service-action{margin-top:30px;max-width:760px}
-.hg-service-cta{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:12px 24px;border:1px solid #f95343;background:#fff;color:#000;font-family:'Muli',sans-serif;font-size:16px;font-weight:700;line-height:1.5;text-decoration:none;transition:background .2s,color .2s}
+.hg-service-cta{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:12px 24px;border:1px solid #f95343;border-radius:4px;background:#fff;color:#000;font-family:'Muli',sans-serif;font-size:16px;font-weight:700;line-height:1.5;text-decoration:none;transition:background .2s,color .2s}
 .hg-service-cta:hover{background:#f95343;color:#000;text-decoration:none}
 /* Keep the original menu appearance, with keyboard access and immediate rendering. */
 .menu{visibility:hidden;pointer-events:none;transition:opacity .25s,visibility .25s;display:flex;overflow-y:auto}
@@ -669,9 +669,10 @@ body.hg-menu-open .hg-proposals{visibility:hidden}
 .hz-contact__field--wide { grid-column: 1 / -1; }
 .hz-contact .hz-contact__required { font-size: 10px; color: #6c6c65; margin: 13px 0 0; line-height: 1.5; }
 .hz-contact__actions { display: flex; justify-content: flex-end; margin-top: 22px; }
-.hz-contact .hz-contact__submit, .hz-contact .hz-contact__careers-link { display: inline-flex; justify-content: space-between; align-items: center; gap: 26px; min-height: 48px; padding: 0 0 0 21px; font: 500 12px/1.4 'Montserrat', 'Segoe UI', Arial, sans-serif; color: #fff; background: #252523; border: 1px solid #252523; border-radius: 0; cursor: pointer; text-decoration: none; transition: background .18s; }
-.hz-contact .hz-contact__submit:hover, .hz-contact .hz-contact__careers-link:hover { background: #41413c; color: #fff; }
-.hz-contact__submit > svg, .hz-contact__careers-link > svg { box-sizing: content-box; width: 18px; height: 18px; padding: 15px; color: #fff; background: var(--hz-accent); }
+.hz-contact .hz-contact__careers-link { display: inline-flex; justify-content: space-between; align-items: center; gap: 26px; min-height: 48px; padding: 0 0 0 21px; font: 500 12px/1.4 'Montserrat', 'Segoe UI', Arial, sans-serif; color: #fff; background: #252523; border: 1px solid #252523; border-radius: 0; cursor: pointer; text-decoration: none; transition: background .18s; }
+.hz-contact .hz-contact__careers-link:hover { background: #41413c; color: #fff; }
+.hz-contact__careers-link > svg { box-sizing: content-box; width: 18px; height: 18px; padding: 15px; color: #fff; background: var(--hz-accent); }
+.hz-contact .hz-contact__submit { background-color:transparent; white-space:normal; cursor:pointer; }
 .hz-contact__submit:disabled { opacity: .6; cursor: wait; }
 .hz-contact .hz-contact__form-note { margin: 19px 0 0; border-top: 1px solid #ecece8; padding-top: 16px; color: #72726b; font-size: 10px; line-height: 1.75; }
 .hz-contact__careers { margin-top: 24px; padding: 26px 23px; background: #f5f5f2; border-left: 2px solid var(--hz-accent); }
@@ -910,7 +911,7 @@ body.hg-menu-open .hg-proposals{visibility:hidden}
       <div class="hz-contact__field hz-contact__field--wide"><label for="hz-message">Message <span aria-hidden="true">*</span></label><textarea id="hz-message" name="message" rows="4" maxlength="5000" required placeholder="Décrivez votre besoin…"></textarea></div>
      </fieldset>
      <p class="hz-contact__required">Tous les champs sont obligatoires.</p>
-     <div class="hz-contact__actions"><button class="hz-contact__submit" type="submit"><span data-hz-button-label>Envoyer ma demande</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></button></div>
+     <div class="hz-contact__actions"><button class="hz-contact__submit btn btn-blue btn-main" type="submit"><span data-hz-button-label>Envoyer ma demande</span></button></div>
      <p class="hz-contact__form-note">Les informations transmises servent uniquement à traiter votre demande.</p>
     </div>
     <div id="hz-careers" class="hz-contact__careers" data-hz-careers hidden role="region" aria-labelledby="hz-careers-title" aria-live="polite">
