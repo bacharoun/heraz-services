@@ -766,6 +766,58 @@ body.hg-menu-open .hg-proposals{visibility:hidden}
   .hz-contact .hz-select__option { font-size: 14px; padding: 12px 10px; min-height: 48px; }
 }
 
+</style><style id="hz-social-styles">
+/* Selected Instagram publications, replacing the homepage gallery. */
+.hz-social { position: relative; padding: 88px 0 90px; isolation: isolate; color: #202020; }
+.hz-social::before { content: ''; position: absolute; z-index: -1; inset: 0 0 0 37%; background: #f2f2ef; }
+.hz-social *, .hz-social *::before, .hz-social *::after { box-sizing: border-box; }
+.hz-social__container { width: min(1170px, calc(100% - 80px)); margin-inline: auto; }
+.hz-social__heading { display: flex; justify-content: space-between; align-items: flex-end; gap: 32px; margin-bottom: 39px; }
+.hz-social .hz-social__eyebrow { display: flex; align-items: center; gap: 12px; margin: 0 0 15px; color: #62625b; font: 600 10px/1.5 'Montserrat',sans-serif; letter-spacing: 2px; text-transform: uppercase; }
+.hz-social__eyebrow::before { content: ''; width: 26px; height: 2px; background: #f95343; }
+.hz-social h2 { font: 500 clamp(33px,3.5vw,46px)/1.2 'Montserrat',sans-serif; color: #171717; margin: 0 0 15px; letter-spacing: -1.5px; }
+.hz-social h2 span { color: #f95343; }
+.hz-social .hz-social__intro { margin: 0; color: #62625b; font: 400 15px/1.8 'Muli',sans-serif; }
+.hz-social__profile { display: flex; align-items: center; gap: 13px; padding: 13px 18px; color: #202020; border: 1px solid #d4d4ce; background: transparent; font: 500 13px/1.5 'Montserrat',sans-serif; text-decoration: none; white-space: nowrap; transition: border-color .18s, background .18s; }
+.hz-social__profile:hover { border-color: #f95343; background: #fff; color: #202020; text-decoration: none; }
+.hz-social__profile > svg:first-child { width: 18px; height: 18px; }
+.hz-social__profile > svg:last-child { width: 15px; height: 15px; margin-left: 10px; color: #f95343; }
+.hz-social__grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); align-items: start; gap: 22px; }
+.hz-social__card { min-width: 0; background: #fff; border: 1px solid #deded8; transition: border-color .18s; }
+.hz-social__card:hover { border-color: #b4b4aa; }
+.hz-social__embed { min-width: 0; background: #fff; }
+.hz-social .instagram-media { width: 100% !important; min-width: 0 !important; max-width: 100% !important; margin: 0 !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; }
+.hz-social iframe.instagram-media { display: block; }
+.hz-social__fallback { display: flex; min-height: 435px; flex-direction: column; justify-content: center; align-items: center; padding: 32px; text-align: center; background: #fff; }
+.hz-social__fallback svg { width: 37px; height: 37px; color: #66665d; margin-bottom: 24px; }
+.hz-social .hz-social__fallback p { max-width: 260px; margin: 0 0 18px; color: #707069; font: 400 13px/1.8 'Muli',sans-serif; }
+.hz-social__fallback > a { color: #202020; font: 600 13px/1.6 'Montserrat',sans-serif; border-bottom: 1px solid #f95343; padding-bottom: 5px; text-decoration: none; }
+.hz-social__fallback > a:hover { color: #bd3e32; }
+.hz-social__card-link { display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 56px; padding: 17px 19px; border-top: 1px solid #e6e6e0; color: #30302b; font: 500 11px/1.6 'Montserrat',sans-serif; text-decoration: none; }
+.hz-social__card-link svg { flex: 0 0 15px; width: 15px; height: 15px; color: #f95343; transition: transform .18s; }
+.hz-social__card-link:hover { color: #202020; background: #fafaf8; text-decoration: none; }
+.hz-social__card-link:hover svg { transform: translate(2px,-2px); }
+.hz-social .hz-social__footnote { margin: 24px 0 0; color: #77776f; font: 400 11px/1.8 'Muli',sans-serif; }
+.hz-social a:focus-visible { outline: 2px solid #f95343; outline-offset: 4px; }
+@media (min-width: 741px) and (max-width: 1199px) {
+  .hz-social__container { width: min(900px, calc(100% - 48px)); }
+  .hz-social__grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 22px; }
+  .hz-social__card:last-child { grid-column: 1 / -1; width: calc(50% - 11px); justify-self: center; }
+}
+@media (max-width: 740px) {
+  .hz-social { padding: 55px 0 58px; }
+  .hz-social::before { left: 20%; }
+  .hz-social__container { width: calc(100% - 16px); max-width: 480px; }
+  .hz-social__heading { padding-inline: 14px; align-items: flex-start; flex-direction: column; gap: 23px; margin-bottom: 28px; }
+  .hz-social h2 { font-size: 34px; letter-spacing: -1.1px; }
+  .hz-social .hz-social__intro { font-size: 14px; max-width: 330px; }
+  .hz-social__profile { padding: 11px 15px; font-size: 12px; }
+  .hz-social__grid { grid-template-columns: minmax(0,1fr); gap: 23px; }
+  .hz-social__fallback { min-height: 400px; }
+  .hz-social .hz-social__footnote { padding-inline: 14px; }
+}
+@media (prefers-reduced-motion: reduce) { .hz-social * { transition: none !important; } }
+
 </style></head><body data-proposition="3"><header>
         <nav>
             <div class="logo">
@@ -790,7 +842,7 @@ body.hg-menu-open .hg-proposals{visibility:hidden}
                                             <li><a class="menu-link" href="https://www.herazgroup.com/" data-scroll-nav="0">Accueil</a></li>
                                             <li><a class="menu-link" href="https://www.herazgroup.com/#about" data-scroll-nav="1">&Agrave; propos</a></li>
                                             <li><a class="menu-link active" href="https://www.herazgroup.com/#service" data-scroll-nav="2">Services</a></li>
-                                            <li><a class="menu-link" href="https://www.herazgroup.com/#galerie" data-scroll-nav="3">Galerie</a></li>
+                                            <li><a class="menu-link" href="#actualites" data-scroll-nav="3">Actualités</a></li>
                                             <li><a class="menu-link" href="https://www.herazgroup.com/#client" data-scroll-nav="4">Clients</a></li>
                                             <li><a class="menu-link" href="https://www.herazgroup.com/blog" >Blog</a></li>
                                             <li><a class="menu-link" href="https://www.herazgroup.com/carrieres">Carrières</a></li>
@@ -841,6 +893,39 @@ body.hg-menu-open .hg-proposals{visibility:hidden}
       </article>
     </div>
   </section>
+<!-- START HERAZ SOCIAL PREVIEW -->
+<section id="actualites" class="hz-social" aria-labelledby="hz-social-title">
+ <div class="hz-social__container">
+  <div class="hz-social__heading">
+   <div><p class="hz-social__eyebrow">Sur nos réseaux</p><h2 id="hz-social-title">L’actualité HERAZ<span>.</span></h2><p class="hz-social__intro">Nos projets, nos idées et la vie de l’agence.</p></div>
+   <a class="hz-social__profile" href="https://www.instagram.com/herazgroup/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></svg><span>Suivre @herazgroup</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
+  </div>
+  <div class="hz-social__grid"><article class="hz-social__card" aria-label="Publication Instagram 1">
+ <div class="hz-social__embed">
+  <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DMIfNHktu8y/" data-instgrm-version="14">
+   <div class="hz-social__fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></svg><p>Découvrez cette publication de HERAZ GROUP sur Instagram.</p><a href="https://www.instagram.com/p/DMIfNHktu8y/" target="_blank" rel="noopener noreferrer">Voir la publication sur Instagram</a></div>
+  </blockquote>
+ </div>
+ <a class="hz-social__card-link" href="https://www.instagram.com/p/DMIfNHktu8y/" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir la publication Instagram 1">Voir la publication<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
+ </article><article class="hz-social__card" aria-label="Publication Instagram 2">
+ <div class="hz-social__embed">
+  <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DMsu_QmtC8d/?img_index=1" data-instgrm-version="14">
+   <div class="hz-social__fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></svg><p>Découvrez cette publication de HERAZ GROUP sur Instagram.</p><a href="https://www.instagram.com/p/DMsu_QmtC8d/?img_index=1" target="_blank" rel="noopener noreferrer">Voir la publication sur Instagram</a></div>
+  </blockquote>
+ </div>
+ <a class="hz-social__card-link" href="https://www.instagram.com/p/DMsu_QmtC8d/?img_index=1" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir la publication Instagram 2">Voir la publication<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
+ </article><article class="hz-social__card" aria-label="Publication Instagram 3">
+ <div class="hz-social__embed">
+  <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C_xgaDANVlP/" data-instgrm-version="14">
+   <div class="hz-social__fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></svg><p>Découvrez cette publication de HERAZ GROUP sur Instagram.</p><a href="https://www.instagram.com/p/C_xgaDANVlP/" target="_blank" rel="noopener noreferrer">Voir la publication sur Instagram</a></div>
+  </blockquote>
+ </div>
+ <a class="hz-social__card-link" href="https://www.instagram.com/p/C_xgaDANVlP/" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir la publication Instagram 3">Voir la publication<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
+ </article></div>
+  <p class="hz-social__footnote">Une sélection de nos publications Instagram.</p>
+ </div>
+</section>
+<!-- END HERAZ SOCIAL PREVIEW -->
 </main>
 <div class="between"><div class="line-between"></div></div><footer><!-- Contact form preview -->
 <section id="contact" class="hz-contact" data-hz-contact data-lang="fr" data-preview="true" aria-labelledby="hz-contact-title">
@@ -1144,6 +1229,36 @@ body.hg-menu-open .hg-proposals{visibility:hidden}
   window.addEventListener('pageshow', sync);
   native.form.addEventListener('reset', () => setTimeout(() => { close(); sync(); }, 0));
   sync();
+})();
+
+</script><script id="hz-social-script">
+(() => {
+  const section = document.getElementById('actualites');
+  if (!section) return;
+  let loaded = false;
+  function loadInstagram() {
+    if (loaded) return;
+    loaded = true;
+    const fallback = () => {
+      section.querySelectorAll('.hz-social__fallback p').forEach(p => {
+        p.textContent = 'Consultez cette publication directement sur Instagram.';
+      });
+    };
+    if (window.instgrm?.Embeds) { window.instgrm.Embeds.process(); return; }
+    const script = document.createElement('script');
+    script.src = 'https://www.instagram.com/embed.js';
+    script.async = true;
+    script.onerror = fallback;
+    script.onload = () => { if (window.instgrm?.Embeds) window.instgrm.Embeds.process(); else fallback(); };
+    document.body.append(script);
+    setTimeout(fallback, 12000);
+  }
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(entries => {
+      if (entries.some(entry => entry.isIntersecting)) { loadInstagram(); observer.disconnect(); }
+    }, { rootMargin: '350px' });
+    observer.observe(section);
+  } else loadInstagram();
 })();
 
 </script></body></html>
