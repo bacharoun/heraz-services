@@ -675,9 +675,8 @@ body.hg-menu-open .hg-proposals{visibility:hidden}
 .hz-contact__field--wide { grid-column: 1 / -1; }
 .hz-contact .hz-contact__required { font-size: 10px; color: #6c6c65; margin: 13px 0 0; line-height: 1.5; }
 .hz-contact__actions { display: flex; justify-content: flex-end; margin-top: 22px; }
-.hz-contact .hz-contact__careers-link { display: inline-flex; justify-content: space-between; align-items: center; gap: 26px; min-height: 48px; padding: 0 0 0 21px; font: 500 12px/1.4 'Montserrat', 'Segoe UI', Arial, sans-serif; color: #fff; background: #252523; border: 1px solid #252523; border-radius: 0; cursor: pointer; text-decoration: none; transition: background .18s; }
-.hz-contact .hz-contact__careers-link:hover { background: #41413c; color: #fff; }
-.hz-contact__careers-link > svg { box-sizing: content-box; width: 18px; height: 18px; padding: 15px; color: #fff; background: var(--hz-accent); }
+.hz-contact .hz-contact__careers-link { background-color:transparent; color:#000; white-space:normal; cursor:pointer; }
+.hz-contact .hz-contact__careers-link:hover { color:#f95343; }
 .hz-contact .hz-contact__submit { background-color:transparent; white-space:normal; cursor:pointer; }
 .hz-contact__submit:disabled { opacity: .6; cursor: wait; }
 .hz-contact .hz-contact__form-note { margin: 19px 0 0; border-top: 1px solid #ecece8; padding-top: 16px; color: #72726b; font-size: 10px; line-height: 1.75; }
@@ -715,7 +714,7 @@ body.hg-menu-open .hg-proposals{visibility:hidden}
   .hz-contact__actions { justify-content: stretch; }
   .hz-contact__submit { width: 100%; }
   .hz-contact__careers { padding: 24px 18px; }
-  .hz-contact__careers-link { width: 100%; gap: 10px !important; }
+  .hz-contact__careers-link { width: 100%; }
 }
 @media (prefers-reduced-motion: reduce) { .hz-contact * { transition: none !important; scroll-behavior: auto !important; } }
 
@@ -1518,7 +1517,7 @@ body.hg-menu-open .hg-proposals{visibility:hidden}
     <div id="hz-careers" class="hz-contact__careers" data-hz-careers hidden role="region" aria-labelledby="hz-careers-title" aria-live="polite">
      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="7" width="18" height="14" rx="1"/><path d="M8 7V3h8v4M3 12c5 4 13 4 18 0M10 13v3h4v-3"/></svg><h4 id="hz-careers-title">Envie de rejoindre l’équipe ?</h4>
      <p>Pour que votre candidature arrive directement à notre équipe RH, rendez-vous sur notre page Carrières. Vous pourrez y consulter nos offres et déposer votre candidature.</p>
-     <a class="hz-contact__careers-link" href="https://www.herazgroup.com/carrieres.html">Découvrir nos opportunités<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
+     <a class="hz-contact__careers-link btn btn-blue btn-main" href="https://www.herazgroup.com/carrieres.html"><span>Découvrir nos opportunités</span></a>
     </div>
     <div class="hz-contact__status" data-hz-status role="status" aria-live="polite" hidden></div>
     <noscript><p>Pour utiliser ce formulaire, activez JavaScript ou écrivez-nous à <a href="mailto:contact@herazgroup.com">contact@herazgroup.com</a>.</p></noscript>
