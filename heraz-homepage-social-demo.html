@@ -364,14 +364,20 @@ a.scrollToHome:hover {
 
     
 
-.blanka-font {
-    font-family: "Posterama 2001 W04 SemiBold", Arial, sans-serif !important;
+@font-face {
+  font-family: 'Blanka';
+  src: url('data:font/woff;base64,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') format('woff');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  unicode-range: U+0041;
 }
-
-
 .blanka-font {
   font-family: 'Blanka', sans-serif;
-  transform: scaleX(0.9); /* Makes it narrower/thinner */
+  font-style: normal;
+  font-weight: 400;
+  font-synthesis: none;
+  transform: scaleX(0.9);
   display: inline-block;
   color: black;
 }
@@ -873,6 +879,46 @@ body.hg-menu-open .hg-proposals{visibility:hidden}
 }
 @media (prefers-reduced-motion: reduce) { .hz-social__grid { scroll-behavior: auto; } }
 
+</style><style id="hz-original-title-styles">
+/* Match the original HERAZ section titles in the local proposals. */
+.hz-section-heading { position: relative; isolation: isolate; padding: 30px 0; z-index: 2; }
+.hz-section-heading::before { content: ''; position: absolute; top: 15px; left: -25px; width: 120px; height: 120px; background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1NjJGRUREMTFEOUYxMUU5QURGNEJCN0RBNTdDRjdBNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1NjJGRUREMjFEOUYxMUU5QURGNEJCN0RBNTdDRjdBNiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjU2MkZFRENGMUQ5RjExRTlBREY0QkI3REE1N0NGN0E2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU2MkZFREQwMUQ5RjExRTlBREY0QkI3REE1N0NGN0E2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+nw/kDAAAAKxJREFUeNpi/P//PwOtARMDHQDRljAyMhoA8X0g/g+lDYi2BRRcxGAgmA9SjoTnE6uXlOBSIMAfInEyagndLGGE5Xhouq8HYgEcag3Q5D4A8QUcah8A8USg2RdQ8gkQ3EfLB5Ti+zCzkX1C9UIMaDYjepw8oLIdcPNYkAQDgTgfT04mOU7IKbv2o4X5flqUXaOZcYRa8oAAnyrVrwFS0QOiDYjVyzhsmkQAAQYA86IDJ+ICZFkAAAAASUVORK5CYII=") repeat; background-size: 10px; opacity: .1; transform: rotate(45deg); z-index: -1; pointer-events: none; }
+.hz-social .hz-section-heading > .hz-social__eyebrow,
+.hz-contact .hz-section-heading > .hz-contact__eyebrow { display: block; margin: 0; color: #f95343; font: 500 18px/1.2 'Montserrat', sans-serif; letter-spacing: 0; text-transform: none; }
+.hz-section-heading > .hz-social__eyebrow::before,
+.hz-section-heading > .hz-contact__eyebrow::before { content: none; }
+.hz-social .hz-section-heading > h2,
+.hz-contact .hz-contact__intro .hz-section-heading > h2 { margin: 0; color: #000; font: 500 50px/1.2 'Montserrat', sans-serif; letter-spacing: normal; }
+.hz-social__title-group { min-width: 0; }
+.hz-social__heading .hz-section-heading { padding-top: 0; padding-bottom: 0; margin-bottom: 15px; }
+.hz-social__heading .hz-section-heading::before { top: -15px; }
+.hz-contact__intro::before { content: none; }
+.hz-contact__intro .hz-section-heading { padding-top: 0; padding-bottom: 0; margin-bottom: 20px; }
+.hz-contact__intro .hz-section-heading::before { top: -15px; }
+@media (max-width: 575px) {
+ .hz-section-heading::before { top: 50%; left: 50%; width: 80px; height: 80px; transform: translate(-50%, -50%) rotate(45deg); }
+ .hz-social__heading .hz-section-heading::before,
+ .hz-contact__intro .hz-section-heading::before { top: 50%; }
+ .hz-social .hz-section-heading > h2,
+ .hz-contact .hz-contact__intro .hz-section-heading > h2 { font-size: 30px; }
+ .hz-social .hz-section-heading > .hz-social__eyebrow,
+ .hz-contact .hz-section-heading > .hz-contact__eyebrow { font-size: 18px; }
+ .hz-contact__intro .hz-section-heading { margin-bottom: 16px; }
+}
+</style><style id="hz-local-hide-likes">
+/* Crop native count/comment footers, then provide the same local comment
+   link on each card. The selected Reel's extra 24px count row is removed. */
+.hz-social__card[data-hz-frame-ready] .hz-social__embed { overflow: hidden; }
+.hz-social__comment { display: none; }
+.hz-social .hz-social__comment {
+ align-items: center; justify-content: space-between; gap: 16px;
+ height: 45px; padding: 0 10px; background: #fff;
+ border-top: 1px solid #dedede; color: #777;
+ font: 400 13px/1.4 Arial, sans-serif; text-decoration: none;
+}
+.hz-social__card[data-hz-frame-ready] .hz-social__comment { display: flex; }
+.hz-social__comment svg { flex: 0 0 22px; width: 22px; height: 22px; color: #000; }
+.hz-social .hz-social__comment:hover { color: #333; text-decoration: none; }
 </style></head><body class="hz-home-preview">
     <header>
         <nav>
@@ -1180,7 +1226,7 @@ body.hg-menu-open .hg-proposals{visibility:hidden}
 <section id="actualites" class="hz-social" aria-labelledby="hz-social-title">
  <div class="hz-social__container">
   <div class="hz-social__heading">
-   <div><p class="hz-social__eyebrow">Sur nos réseaux</p><h2 id="hz-social-title">L’actualité HERAZ<span>.</span></h2><p class="hz-social__intro">Nos projets, nos idées et la vie de l’agence.</p></div>
+   <div class="hz-social__title-group"><div class="hz-section-heading"><h3 class="hz-social__eyebrow">Notre</h3><h2 id="hz-social-title">Actualité</h2></div><p class="hz-social__intro">Nos projets, nos idées et la vie de l’agence.</p></div>
    <a class="hz-social__profile" href="https://www.instagram.com/herazgroup/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></svg><span>Suivre @herazgroup</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
   </div>
   <div class="hz-social__grid" role="region" aria-label="Publications Instagram"><article class="hz-social__card" aria-label="Publication Instagram 1">
@@ -1197,7 +1243,7 @@ body.hg-menu-open .hg-proposals{visibility:hidden}
   </blockquote>
  <a class="hz-social__swipe-cover" href="https://www.instagram.com/p/DMsu_QmtC8d/?img_index=1" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir cette publication Instagram"></a></div>
  <a class="hz-social__card-link" href="https://www.instagram.com/p/DMsu_QmtC8d/?img_index=1" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir la publication Instagram 2">Voir la publication<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
- </article><article class="hz-social__card" aria-label="Publication Instagram 3">
+ </article><article class="hz-social__card" aria-label="Publication Instagram 3" data-hz-hide-likes>
  <div class="hz-social__embed">
   <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C_xgaDANVlP/" data-instgrm-version="14">
    <div class="hz-social__fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></svg><p>Découvrez cette publication de HERAZ GROUP sur Instagram.</p><a href="https://www.instagram.com/p/C_xgaDANVlP/" target="_blank" rel="noopener noreferrer">Voir la publication sur Instagram</a></div>
@@ -1352,8 +1398,10 @@ body.hg-menu-open .hg-proposals{visibility:hidden}
     <section id="contact" class="hz-contact" data-hz-contact data-lang="fr" data-preview="true" aria-labelledby="hz-contact-title">
  <div class="hz-contact__layout">
   <div class="hz-contact__intro">
-   <p class="hz-contact__eyebrow">Parlons de votre projet</p>
-   <h2 id="hz-contact-title">Contactez-nous<span>.</span></h2>
+   <div class="hz-section-heading">
+    <h3 class="hz-contact__eyebrow">Parlons de votre projet</h3>
+    <h2 id="hz-contact-title">Contactez-nous</h2>
+   </div>
    <p class="hz-contact__description">Une idée, un besoin, une ambition ?<br>Construisons la suite ensemble.</p>
   </div>
   <div class="hz-contact__offices">
@@ -1788,4 +1836,50 @@ body.hg-menu-open .hg-proposals{visibility:hidden}
   layout();
 })();
 
-</script></body></html>
+</script>
+<script id="hz-local-embed-footers">
+(() => {
+ const section = document.getElementById('actualites');
+ if (!section) return;
+ const cards = [...section.querySelectorAll('.hz-social__card')];
+ const attached = new WeakSet();
+ function attach() {
+  cards.forEach(card => {
+   const embed = card.querySelector('.hz-social__embed');
+   const frame = embed.querySelector('iframe');
+   if (!frame || attached.has(frame)) return;
+   attached.add(frame);
+   let footer = card.querySelector('.hz-social__comment');
+   if (!footer) {
+    footer = document.createElement('a');
+    footer.className = 'hz-social__comment';
+    footer.href = card.querySelector('.hz-social__card-link').href;
+    footer.target = '_blank';
+    footer.rel = 'noopener noreferrer';
+    footer.setAttribute('aria-label', 'Ajouter un commentaire sur Instagram');
+    footer.innerHTML = '<span>Ajouter un commentaire...</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".7"/></svg>';
+    embed.after(footer);
+   }
+   function size() {
+    const height = frame.getBoundingClientRect().height;
+    if (height < 300) {
+     embed.style.removeProperty('height');
+     card.removeAttribute('data-hz-frame-ready');
+     return;
+    }
+    // Native comment footer: 45px; visible Reel like-count row: 24px.
+    const trim = card.hasAttribute('data-hz-hide-likes') ? 69 : 45;
+    const next = (height - trim) + 'px';
+    if (embed.style.height !== next) embed.style.height = next;
+    card.setAttribute('data-hz-frame-ready', '');
+   }
+   new ResizeObserver(size).observe(frame);
+   frame.addEventListener('load', size);
+   size();
+  });
+ }
+ new MutationObserver(attach).observe(section.querySelector('.hz-social__grid'), { childList: true, subtree: true });
+ attach();
+})();
+</script>
+</body></html>
