@@ -766,6 +766,32 @@ body.hg-menu-open .hg-proposals{visibility:hidden}
   .hz-contact .hz-select__option { font-size: 14px; padding: 12px 10px; min-height: 48px; }
 }
 
+</style><style id="hz-original-title-styles">
+/* Match the original HERAZ section titles in the local proposals. */
+.hz-section-heading { position: relative; isolation: isolate; padding: 30px 0; z-index: 2; }
+.hz-section-heading::before { content: ''; position: absolute; top: 15px; left: -25px; width: 120px; height: 120px; background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1NjJGRUREMTFEOUYxMUU5QURGNEJCN0RBNTdDRjdBNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1NjJGRUREMjFEOUYxMUU5QURGNEJCN0RBNTdDRjdBNiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjU2MkZFRENGMUQ5RjExRTlBREY0QkI3REE1N0NGN0E2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU2MkZFREQwMUQ5RjExRTlBREY0QkI3REE1N0NGN0E2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+nw/kDAAAAKxJREFUeNpi/P//PwOtARMDHQDRljAyMhoA8X0g/g+lDYi2BRRcxGAgmA9SjoTnE6uXlOBSIMAfInEyagndLGGE5Xhouq8HYgEcag3Q5D4A8QUcah8A8USg2RdQ8gkQ3EfLB5Ti+zCzkX1C9UIMaDYjepw8oLIdcPNYkAQDgTgfT04mOU7IKbv2o4X5flqUXaOZcYRa8oAAnyrVrwFS0QOiDYjVyzhsmkQAAQYA86IDJ+ICZFkAAAAASUVORK5CYII=") repeat; background-size: 10px; opacity: .1; transform: rotate(45deg); z-index: -1; pointer-events: none; }
+.hz-social .hz-section-heading > .hz-social__eyebrow,
+.hz-contact .hz-section-heading > .hz-contact__eyebrow { display: block; margin: 0; color: #f95343; font: 500 18px/1.2 'Montserrat', sans-serif; letter-spacing: 0; text-transform: none; }
+.hz-section-heading > .hz-social__eyebrow::before,
+.hz-section-heading > .hz-contact__eyebrow::before { content: none; }
+.hz-social .hz-section-heading > h2,
+.hz-contact .hz-contact__intro .hz-section-heading > h2 { margin: 0; color: #000; font: 500 50px/1.2 'Montserrat', sans-serif; letter-spacing: normal; }
+.hz-social__title-group { min-width: 0; }
+.hz-social__heading .hz-section-heading { padding-top: 0; padding-bottom: 0; margin-bottom: 15px; }
+.hz-social__heading .hz-section-heading::before { top: -15px; }
+.hz-contact__intro::before { content: none; }
+.hz-contact__intro .hz-section-heading { padding-top: 0; padding-bottom: 0; margin-bottom: 20px; }
+.hz-contact__intro .hz-section-heading::before { top: -15px; }
+@media (max-width: 575px) {
+ .hz-section-heading::before { top: 50%; left: 50%; width: 80px; height: 80px; transform: translate(-50%, -50%) rotate(45deg); }
+ .hz-social__heading .hz-section-heading::before,
+ .hz-contact__intro .hz-section-heading::before { top: 50%; }
+ .hz-social .hz-section-heading > h2,
+ .hz-contact .hz-contact__intro .hz-section-heading > h2 { font-size: 30px; }
+ .hz-social .hz-section-heading > .hz-social__eyebrow,
+ .hz-contact .hz-section-heading > .hz-contact__eyebrow { font-size: 18px; }
+ .hz-contact__intro .hz-section-heading { margin-bottom: 16px; }
+}
 </style></head><body data-proposition="3"><header>
         <nav>
             <div class="logo">
@@ -846,8 +872,10 @@ body.hg-menu-open .hg-proposals{visibility:hidden}
 <section id="contact" class="hz-contact" data-hz-contact data-lang="fr" data-preview="true" aria-labelledby="hz-contact-title">
  <div class="hz-contact__layout">
   <div class="hz-contact__intro">
-   <p class="hz-contact__eyebrow">Parlons de votre projet</p>
-   <h2 id="hz-contact-title">Contactez-nous<span>.</span></h2>
+   <div class="hz-section-heading">
+    <h3 class="hz-contact__eyebrow">Parlons de votre projet</h3>
+    <h2 id="hz-contact-title">Contactez-nous</h2>
+   </div>
    <p class="hz-contact__description">Une idée, un besoin, une ambition ?<br>Construisons la suite ensemble.</p>
   </div>
   <div class="hz-contact__offices">
